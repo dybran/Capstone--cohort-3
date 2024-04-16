@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capstone3-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: capstone3-app
+  template:
+    metadata:
+      labels:
+        app: capstone3-app
+    spec:
+      containers:
+      - name: capstone3-app-container
+        image: dybran/capstone-3:latest
+        ports:
+        - containerPort: 80
