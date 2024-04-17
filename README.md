@@ -95,7 +95,7 @@ Push the image to the dockerhub
 
 `$ docker push dybran/capstone-3:latest`
 
-![](./images/i.PNG)
+![](./images/j.PNG)
 
 Verify on dockerhub
 
